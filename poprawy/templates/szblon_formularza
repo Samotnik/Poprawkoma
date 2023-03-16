@@ -1,0 +1,46 @@
+    </nav>
+        <div class="center">
+            <h1>Formularz popraw</h1>
+            <form method="post">
+              <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Temat</label>
+              </div>
+            <div class="test">
+                <label>Przedmiot</label>
+              <select id="cars" name="cars" class="suwak">
+                <option value="volvo">Biologia</option>
+                <option value="volvo">Chemia</option>
+                <option value="volvo">Filozofia</option>
+                <option value="volvo">Fizyka</option>
+                <option value="volvo">Geografia</option>
+                <option value="volvo">Historia</option>
+                <option value="volvo">Historia i teraźniejszość</option>
+                <option value="volvo">Informatyka</option>
+                <option value="volvo">Język angielski</option>
+                <option value="volvo">Język hiszpański</option>
+                <option value="volvo">Język polski</option>
+                <option value="volvo">Mateatyka </option>
+                <option value="volvo">Projekt społeczny</option>
+                <option value="volvo">Religia</option>
+                <option value="volvo">Wychowanie fizyczne</option>
+                <option value="volvo"></option>
+              </select>
+              <label>Nauczyciel</label>
+              <select id="cars" name="cars" class="suwak">
+                <option value="volvo">Jakiś typ 1</option>
+                <option value="volvo">Jakiś typ 2</option>
+                <option value="volvo">Jakiś typ 3</option>
+                <option value="volvo">Jakiś typ 4</option>
+                <option value="volvo">Jakiś typ 5</option>
+                <option value="volvo">Jakiś typ 6</option>
+                <option value="volvo">Jakiś typ 7</option>
+                <option value="volvo">Jakiś typ 8</option>
+                <option value="volvo"></option>
+              </select>
+            </div>
+
+                <input type="button" value="Wyślij zgłoszenie"> <!-- Zamienić poźniej na submit tu i w css-->
+            </form>
+    </nav>

@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="shortcut icon" href="{%  static 'wspolne/notepad.ico' %}">
+    <title>Pomoc</title>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'user_page'%}" >PoprawkoMat</a></li>
+          </ul>
+        <div class="user-profile">
+            <img src="{% static 'ikony_userpage/user.png' %}" class="user" onclick="toggleMenu()">
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="{% static 'ikony_userpage/user.png' %}">
+                    <h4>{{request.user.first_name}}</h4>
+                </div>
+                <hr>
+            
+                <div class="sub-menu-link">
+                    <a href="{% url 'ustawienia'%}" class="sub-menu-link">
+                        <img src="{% static 'ikony_userpage/settings.png' %}">
+                        <p>Ustawienia></p>
+                        <span></span>
+                    </a>
+                </div>
+                <a href="{% url 'logout'%}" class="sub-menu-link">
+                    <img src="{% static 'ikony_userpage/logout.png' %}">
+                    <p>Wyloguj się ></p>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+<script>
+
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+
+</script>
+</body>
+</html>

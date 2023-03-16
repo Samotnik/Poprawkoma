@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'index.css' %}">
+        <link rel="shortcut icon" href="{%  static 'wspolne/notepad.ico' %}">
+        <title>PoprawkoMat</title>
+    </head>
+<body>
+  <nav>
+    <img class="sv" src="{% static 'wspolne/notepad.png' %}">
+    <label class="logo">PoprawkoMat</label>
+  </nav>
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post" action="">
+              {% csrf_token %}
+              <div class="txt_field">
+                <input type="text" name="username" placeholder="Szkolny adres e-mail..." class="form-control">
+              </div>
+              <div class="txt_field">
+                <input type="password" name="password" placeholder="Hasło..." class="form-control" >
+                <span></span>
+              </div>
+              <a href="{% url 'pomoc'%}">
+                <div class="pass">Problem z logowaniem?</div>
+              </a>
+                <input type="submit" name="button" value="Zaloguj się">
+            </form>
+          </div>
+    </body>
+</html>
